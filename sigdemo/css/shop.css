@@ -1,0 +1,36 @@
+#map {
+	display: inline-block;
+	width: 50%;
+	height:500px;
+}
+.map-text-area {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	height: 500px;
+	padding-left: 20px;
+}
+#menu_booth {
+	height: 22px;
+	line-height: 22px;
+	padding: 0;
+	background-image: url(../images/common/bg_02.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #999;
+	text-align: center;
+	color: #3F3F3F;
+	width: 64px;
+	position: relative;
+	display: inline-block;
+}
+.toggle {
+    display: none;
+}
+.map-text th {
+	width: 135px;
+}
+.map-text td {
+	border: 1px solid #154870;
+	background-color: #ffffff;
+	padding: 10px;
+}

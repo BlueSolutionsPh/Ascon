@@ -1,0 +1,32 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /sigdemo/
+
+# Protect hidden files from being viewed
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+
+# Protect application and system files from being viewed
+RewriteRule ^(?:apps|modules|system)\b.* index.php/$0 [L]
+
+AuthType Digest
+AuthName "sigdemo"
+AuthDigestDomain /sigdemo/
+AuthUserFile /etc/httpd/conf/.htdigest
+Require valid-user
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+RewriteRule .* index.php/$0 [PT]
+
+# for PHP
+php_value post_max_size 800M
+php_value upload_max_filesize 800M
+php_value memory_limit 850M

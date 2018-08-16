@@ -1,0 +1,19 @@
+.popup_help {
+  padding: 0 3px;
+  color: #66f;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.popup_help_window {
+  max-width: 300px;
+  position: absolute;
+  padding: 6px 15px;
+  background-color: #fff;
+  border: 2px double #D74300;
+  display: none;
+  color: #D74300;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #ccc;
+}

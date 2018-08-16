@@ -1,0 +1,3 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2018-03-02 20:41:01 --- ERROR: Database_Exception [ 23502 ]: SQLSTATE[23502]: Not null violation: 7 ERROR:  null value in column "update_user" violates not-null constraint [ update 	t_prog_playlist_rela set 	del_flag = 1, 	update_user = NULL, 	update_dt = NULL where 	prog_id = 287 and 	del_flag = 0  ] ~ MODPATH/database/classes/kohana/database/pdo.php [ 157 ]

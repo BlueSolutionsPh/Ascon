@@ -1,0 +1,77 @@
+.draglist,
+.droplist {
+	list-style-type: none;
+	margin: 0 2px;
+	padding: 2px;
+	width: 100%;
+	float: left;
+	min-height: 1.5em;
+	background-color: beige;
+	border: solid 1px #606060;
+	overflow-y: scroll;
+	height: 300px;
+}
+.droplist.playlist {
+	height: 340px;
+	overflow-y: auto;
+	cursor: default;
+}
+.droplist table {
+	position: relative;
+}
+.draglist th,
+.droplist th,
+.draglist td,
+.droplist td {
+	margin: 3px;
+	padding: 0.3em;
+	padding-left: 1em;
+	font-weight: bold;
+	cursor: move;
+}
+.droplist.playlist th,
+.droplist.playlist td {
+	cursor: default;
+}
+.draglist table tbody tr.odd td,
+.droplist table tbody tr.odd td {
+	background: #ebebf3;
+}
+.draglist th,
+.droplist th {
+	background: beige;
+}
+.draglist td.node {
+	padding: 0.3em;
+	font-weight: normal;
+	cursor: default;
+}
+.droplist td span.close {
+	background-color: #606060;
+	float: right;
+	border-radius: 15px;
+	color: #ffffff;
+	font-weight: bold;
+	border: solid 1px #606060;
+	padding: 0 4.75px;
+	cursor: pointer;
+	margin-top: -2px;
+}
+.droplist table tbody tr td.blank {
+	background: #ffffff;
+}
+.droplist table tbody tr td.dropover {
+	background: #ffdddd;
+}
+td.border-color-red {
+	border-color: red;
+}
+td.border-color-blue {
+	border-color: blue;
+}
+td.border-color-green {
+	border-color: green;
+}
+.ui-draggable-dragging {
+	z-index: 10;
+}

@@ -1,0 +1,12 @@
+AuthType Digest
+AuthName "cts"
+AuthDigestDomain /originalsite_dev/
+AuthUserFile /etc/httpd/conf/.htdigest
+Require valid-user
+
+SSLRequireSSL
+
+# for PHP
+php_value post_max_size 50M
+php_value upload_max_filesize 50M
+php_value memory_limit 100M
